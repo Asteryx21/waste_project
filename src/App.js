@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Map from './Map';
+import Modal from "./Modal";
+import Home from "./Home";
+import {Route, Routes} from 'react-router-dom';
 
-function App() {
+export default function App() {
+
+  const [show, setShow] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState("");
+
+  const handleClose = () => setShow(false);
+  const handleOpen = () => setShow(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Map'
+        element={<Map onOpen={handleOpen} setSelectedCountry={setSelectedCountry} />}
+        />
+      </Routes>
+      <Modal show={show} onClose={handleClose} selectedCountry={selectedCountry} />
+    </>
+  )
 }
-
-export default App;

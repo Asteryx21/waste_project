@@ -1,0 +1,31 @@
+.legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  
+  .legend-label {
+    font-size: 14px;
+  }
+
+.legend p {
+  font-size: 1.5em;
+}

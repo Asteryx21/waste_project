@@ -1,0 +1,15 @@
+.MapContainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #2cb7e0;
+}
+.Test {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width:200px;
+    height: 45px;
+    border-width: 3px;
+    border-color: rgba(50, 50, 50, 0.14);
+    z-index: 1000;
+}
