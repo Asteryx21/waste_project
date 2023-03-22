@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Asteryx21.github.io/waste_project",
   "name": "waste_project",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.59.3"
   }
 }
