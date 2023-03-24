@@ -10,7 +10,7 @@ const center = [49.51539930407464, 12.65064714500086]
 const colors = ['red', 'orange', 'green','#525452'];
 const labels = ['0-20%',  '20-40%', '40-100%', 'No data'];
 
-export default function Map({onOpen, setSelectedCountry}) {
+export default function Map({onOpen, setSelectedCountry, setSelectedFeature}) {
 
     const [selectedValue, setSelectedValue] = useState('Renewable energy consumption');
     
@@ -71,6 +71,7 @@ export default function Map({onOpen, setSelectedCountry}) {
             click: (e) => {
                 const countryName = e.target.feature.properties;
                 setSelectedCountry(countryName);
+                setSelectedFeature(value);
                 onOpen();
             },
         });

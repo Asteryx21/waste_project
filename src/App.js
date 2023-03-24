@@ -8,6 +8,7 @@ export default function App() {
 
   const [show, setShow] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedFeature, setSelectedFeature] = useState("");
 
   const handleClose = () => setShow(false);
   const handleOpen = () => setShow(true);
@@ -17,10 +18,10 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Map'
-        element={<Map onOpen={handleOpen} setSelectedCountry={setSelectedCountry} />}
+        element={<Map onOpen={handleOpen} setSelectedCountry={setSelectedCountry} setSelectedFeature = {setSelectedFeature} />}
         />
       </Routes>
-      <Modal show={show} onClose={handleClose} selectedCountry={selectedCountry} />
+      <Modal show={show} onClose={handleClose} selectedCountry={selectedCountry} selectedFeature = {selectedFeature} />
     </>
   )
 }
