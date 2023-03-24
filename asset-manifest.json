@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/waste_project/static/css/main.b7bee491.css",
-    "main.js": "/waste_project/static/js/main.e3e1417a.js",
+    "main.css": "/waste_project/static/css/main.52e76c6b.css",
+    "main.js": "/waste_project/static/js/main.7baf491a.js",
     "static/media/8k_earth_clouds.jpg": "/waste_project/static/media/8k_earth_clouds.08fcd80007fae8fc7170.jpg",
     "static/media/8k_earth_daymap.jpg": "/waste_project/static/media/8k_earth_daymap.54672c1f3ba121d80470.jpg",
     "static/media/8k_earth_specular_map.jpg": "/waste_project/static/media/8k_earth_specular_map.7b4efa59933b470e3776.jpg",
     "static/media/8k_earth_normal_map.jpg": "/waste_project/static/media/8k_earth_normal_map.930cf2e99bc548140c29.jpg",
     "index.html": "/waste_project/index.html",
-    "main.b7bee491.css.map": "/waste_project/static/css/main.b7bee491.css.map",
-    "main.e3e1417a.js.map": "/waste_project/static/js/main.e3e1417a.js.map"
+    "main.52e76c6b.css.map": "/waste_project/static/css/main.52e76c6b.css.map",
+    "main.7baf491a.js.map": "/waste_project/static/js/main.7baf491a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7bee491.css",
-    "static/js/main.e3e1417a.js"
+    "static/css/main.52e76c6b.css",
+    "static/js/main.7baf491a.js"
   ]
 }
