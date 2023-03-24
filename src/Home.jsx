@@ -18,7 +18,7 @@ export default function Home() {
     <div className='canvas'>
         <div className='Container'>
         <h1 className='title'>Project Waste</h1>
-        <h4 className='slogal'>Trash talk never looked so good!</h4>
+        <h4 className='slogan'>Trash talk never looked so good!</h4>
         <p className='description'>
             The project displays Eurostat data on 
             recycling rates, waste production per capita, 
